@@ -1,0 +1,20 @@
+
+@import 'tailwindcss';
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(233, 233, 233);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}

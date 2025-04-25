@@ -1,20 +1,12 @@
-
-@import 'tailwindcss';
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700&display=swap");
+@import "tailwindcss";
 
 html {
   scroll-behavior: smooth;
 }
 
-
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body{
-  background-color: rgb(233, 233, 233);
-  font-family: "Montserrat", sans-serif;
+body {
+  background-color: rgb(216, 216, 216);
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }

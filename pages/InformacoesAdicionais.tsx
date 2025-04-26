@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { IoMale } from "react-icons/io5";
 import { IoMdFemale } from "react-icons/io";
 import { GiBodyHeight } from "react-icons/gi";

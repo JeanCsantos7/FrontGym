@@ -1,3 +1,4 @@
+import React from "react"
 import Logotipo from "../src/assets/Logotipo.png";
 import Logotipo2 from "../src/assets/Logotipo 2.png";
 import { useNavigate } from "react-router-dom";
@@ -20,6 +21,7 @@ export default function Home() {
           </button>
 
           <button
+          onClick={() => navigate("/Cadastro")}
             className="border-2 text-md border-[#787878] text-[#e26631] rounded-3xl p-[4%] w-[35vw] h-[50px] font-semibold"
           >
             Cadastrar

@@ -10,3 +10,18 @@ body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
+
+
+.range-custom {
+  @apply appearance-none h-2 rounded bg-[#e26631]; /* Tailwind mixed */
+}
+
+.range-custom::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  @apply h-5 w-5 rounded-full bg-white border-2 border-[#e26631] cursor-pointer;
+  margin-top: -6px; /* Ajusta o alinhamento vertical */
+}
+
+.range-custom::-moz-range-thumb {
+  @apply h-5 w-5 rounded-full bg-white border-2 border-[#e26631] cursor-pointer;
+}

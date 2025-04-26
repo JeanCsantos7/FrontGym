@@ -1,5 +1,5 @@
 
-import React from "react"
+
 import Logotipo from "../src/assets/Logotipo.png"
 import { useNavigate } from "react-router-dom"
 

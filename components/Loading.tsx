@@ -2,8 +2,8 @@ import { BarLoader } from "react-spinners";
 import { CSSProperties, useState } from "react";
 
 const Loading = () => {
-  let [loading, setLoading] = useState(true);
-  let [color, setColor] = useState("#e26631");
+  let [loading] = useState(true);
+  let [color] = useState("#e26631");
 
   const override: CSSProperties = {
     display: "block",

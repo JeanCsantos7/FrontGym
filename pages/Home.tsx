@@ -1,6 +1,5 @@
-import React from "react";
+
 import Logotipo from "../src/assets/Logotipo.png";
-import Logotipo2 from "../src/assets/Logotipo 2.png";
 import Footer from "./Footer"
 import { useNavigate } from "react-router-dom";
 

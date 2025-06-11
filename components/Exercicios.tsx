@@ -24,7 +24,7 @@ const Exercicios = () => {
 
   useEffect(() => {
     const fetchAPI = async () => {
-      const linkAPI = `http://localhost:5000/exercicio/${recortar}`
+      const linkAPI = `https://back-end-gym-goes.vercel.app/exercicio/${recortar}`
       const response = await axios.get(linkAPI)
       setResult(response.data)
     }

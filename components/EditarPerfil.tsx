@@ -39,7 +39,7 @@ const EditarPerfil = ({
   const editarDados = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const linkAPI = `http://localhost:5000/EditarPerfil/${idArmazenado}`;
+    const linkAPI = `https://back-end-gym-goes.vercel.app/EditarPerfil/${idArmazenado}`;
     await axios.put(linkAPI, {
       nome: editarNome,
       cpf: editarCPF,

@@ -31,7 +31,7 @@ const MeuTreino = () => {
 
   const fetchAPI = async () => {
     try {
-      const linkAPI = `http://localhost:5000/exibirExercicios/${idArmazenado}`;
+      const linkAPI = `https://back-end-gym-goes.vercel.app/exibirExercicios/${idArmazenado}`;
       const response = await axios.get(linkAPI);
       setResult(response.data);
 
@@ -54,11 +54,11 @@ const MeuTreino = () => {
     let linkAPI = "";
     try {
       if (equipamento && grupo_muscular) {
-        linkAPI = `http://localhost:5000/filtroCombinado/${idArmazenado}/${equipamento}/${grupo_muscular}`;
+        linkAPI = `https://back-end-gym-goes.vercel.app/filtroCombinado/${idArmazenado}/${equipamento}/${grupo_muscular}`;
       } else if (equipamento) {
-        linkAPI = `http://localhost:5000/filtroEquipamentos/${equipamento}`;
+        linkAPI = `https://back-end-gym-goes.vercel.app/filtroEquipamentos/${equipamento}`;
       } else if (grupo_muscular) {
-        linkAPI = `http://localhost:5000/filtroMusculo/${grupo_muscular}`;
+        linkAPI = `https://back-end-gym-goes.vercel.app/filtroMusculo/${grupo_muscular}`;
       } else {
         fetchAPI();
         return;
@@ -97,7 +97,7 @@ const MeuTreino = () => {
   ) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:5000/atualizarDados/${id}`, {
+      await axios.put(`https://back-end-gym-goes.vercel.app/atualizarDados/${id}`, {
         carga,
         repeticoes,
       });

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Logotipo from "../src/assets/Logotipo.png";
-import { useNavigate } from "react-router-dom";
+
 import axios from "axios";
 import { IoMale } from "react-icons/io5";
 import { IoMdFemale } from "react-icons/io";
@@ -21,7 +21,7 @@ const Cadastro = () => {
     e.preventDefault();
 
     try {
-      const linkAPI = "http://localhost:5000/Cadastro";
+      const linkAPI = "https://back-end-gym-goes.vercel.app/Cadastro";
 
       const response = await axios.post(
         linkAPI,

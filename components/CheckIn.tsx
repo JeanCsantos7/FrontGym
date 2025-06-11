@@ -29,7 +29,7 @@ const CheckIn = () => {
   }
 
   const fetchAPI = async () => {
-      const linkAPI = `http://localhost:5000/exibirPresenca/${nome}`;
+      const linkAPI = `https://back-end-gym-goes.vercel.app/exibirPresenca/${nome}`;
       const response = await axios.get(linkAPI);
 
       setResult(response.data);
@@ -46,7 +46,7 @@ const CheckIn = () => {
     const id = sessionStorage.getItem("id");
 
     try {
-      const linkAPI = `http://localhost:5000/checkIn`;
+      const linkAPI = `https://back-end-gym-goes.vercel.app/checkIn`;
       const response = await axios.post(linkAPI, {
         id: id,
         nome: nome,

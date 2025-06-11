@@ -27,7 +27,7 @@ const Perfil = () => {
 
   useEffect(() => {
     const fetchAPI = async () => {
-      const linkAPI = `http://localhost:5000/buscarIMC/${idArmazenado}`;
+      const linkAPI = `https://back-end-gym-goes.vercel.app/buscarIMC/${idArmazenado}`;
       const response = await axios.get(linkAPI);
       setPerfilData(response.data[0]);
     };

@@ -17,7 +17,7 @@ const LoginClientes = () => {
   e.preventDefault()
 
   try {
-    const linkAPI = "http://localhost:5000/Login"
+    const linkAPI = "https://back-end-gym-goes.vercel.app/Login"
    
     const response = await axios.post(linkAPI, 
     {email,senha})

@@ -29,7 +29,7 @@ const DetalhesExercicios = () => {
   const [result, setResult] = useState<exerciciosTypes[]>([]);
 
  const fetchAPI = async () => {
-      const linkAPI = `http://localhost:5000/filtro/${pegarParametro}`;
+      const linkAPI = `https://back-end-gym-goes.vercel.app/${pegarParametro}`;
       const response = await axios.get(linkAPI);
       setResult(response.data);
     };
@@ -48,7 +48,7 @@ const DetalhesExercicios = () => {
     const idArmazenado = sessionStorage.getItem("id")
 
     try {
-      const linkAPI = `http://localhost:5000/AdicionarExercicios`
+      const linkAPI = `https://back-end-gym-goes.vercel.app/AdicionarExercicios`
       const post = await axios.post(linkAPI, {
         usuario_id: idArmazenado,
         nome_exercicio: item.nome,

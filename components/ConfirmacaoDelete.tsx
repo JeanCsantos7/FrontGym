@@ -11,7 +11,7 @@ interface ModalTypes{
 
 
   const deletarExercicio = async (id: number, fetchAPI: () => void) => {
-    const linkAPI = `http://localhost:5000/deletarExercicio/${id}`;
+    const linkAPI = `https://back-end-gym-goes.vercel.app/deletarExercicio/${id}`;
     await axios.delete(linkAPI);
     fetchAPI()
       

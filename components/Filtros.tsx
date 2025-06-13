@@ -36,7 +36,7 @@ const Filtros = ({
       <label className="text-lg font-semibold text-gray-700">Filtrar por:</label>
 
       <select
-        className="w-full max-w-md min-h-[3rem] bg-[#e26631] px-6 py-3 rounded-xl text-white text-lg outline-none border-2 border-[#ff520d] focus:ring-2 focus:ring-[#e26631]/50"
+        className="w-full max-w-md min-h-[5rem] bg-[#e26631] px-6 py-3 rounded-xl text-white text-lg outline-none border-2 border-[#ff520d] focus:ring-2 focus:ring-[#e26631]/50"
         onChange={(e) => setGrupoMuscular(e.target.value)}
         value={grupo_muscular}
       >
@@ -56,7 +56,7 @@ const Filtros = ({
       </select>
 
       <select
-        className="w-full max-w-md min-h-[3rem] bg-[#e26631] px-6 py-3 rounded-xl text-white text-lg outline-none border-2 border-[#ff520d] focus:ring-2 focus:ring-[#e26631]/50"
+        className="w-full max-w-md min-h-[5rem] bg-[#e26631] px-6 py-3 rounded-xl text-white text-lg outline-none border-2 border-[#ff520d] focus:ring-2 focus:ring-[#e26631]/50"
         onChange={(e) => setEquipamento(e.target.value)}
         value={equipamento}
       >

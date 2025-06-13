@@ -40,7 +40,7 @@ const DetalhesExercicios = () => {
     const idArmazenado = sessionStorage.getItem("id");
 
     try {
-      const linkAPI = `http://localhost:5000/AdicionarExercicios`;
+      const linkAPI = `https://back-end-gym-goes.vercel.app/AdicionarExercicios`;
       await axios.post(
         linkAPI,
         {
@@ -56,12 +56,13 @@ const DetalhesExercicios = () => {
       );
 
       setConfirmar(<ConfirmacaoAlert />);
+      alert("teste")
       setTimeout(() => {
         setConfirmar("");
-         fetchAPI();
+    
       }, 5200);
 
-     
+          fetchAPI();
 
       
       navigate(`/exercicios/${pegarParametro}/${item.nome}`);

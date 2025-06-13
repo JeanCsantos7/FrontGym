@@ -67,7 +67,7 @@ const CheckIn = () => {
     <>
 
       <Header/>
-   <div className=" mt-[8%] flex flex-col justify-center items-center  px-5">
+   <div className=" mt-[8%] mb-[5.5%] flex flex-col justify-center items-center  px-5">
      
      
       <div className="w-full max-w-md bg-white  rounded-2xl shadow-xl shadow-[#292929] p-4 flex flex-col items-center space-y-5">

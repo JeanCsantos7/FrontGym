@@ -4,6 +4,7 @@ import axios from "axios";
 import ConfirmacaoCheckIn from "./ConfirmacaoCheckIn";
 import Header from "./Header";
 
+
 interface checkTypes {
   id: number;
   nome: string;
@@ -110,6 +111,7 @@ const CheckIn = () => {
             }
             
           </span>
+        
         </p>
       </div>
     </div>

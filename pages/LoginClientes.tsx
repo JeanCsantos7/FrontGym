@@ -80,7 +80,7 @@ const LoginClientes = () => {
             E-mail
           </label>
           <input
-            className=" border-2 border-[#e26631] rounded-lg w-full h-[6.2vh] mt-[4%] outline-none p-[3%]"
+            className=" border-2 border-[#e26631] rounded-lg w-full h-[6.5vh] mt-[4%] outline-none p-[3%]"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value) }
@@ -92,7 +92,7 @@ const LoginClientes = () => {
             Senha
           </label>
           <input
-            className=" border-2 border-[#e26631] rounded-md  mt-[4%] w-full h-[6.2vh] p-[3%] outline-none"
+            className=" border-2 border-[#e26631] rounded-md  mt-[4%] w-full h-[6.5vh] p-[3%] outline-none"
             type="password"
             value={senha}
             onChange={(e) => setSenha(e.target.value)}

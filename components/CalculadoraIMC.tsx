@@ -43,7 +43,7 @@ const CalculadoraIMC = () => {
   return (
     <>
       <Header />
-      <div className="border-2 border-[#e26631] bg-[#ffffff] w-[90vw] rounded-2xl h-[55vh] p-[8%] mt-[9%]   m-auto">
+      <div className="border-2 border-[#e26631] bg-[#ffffff] w-[90vw] rounded-2xl h-[65vh] p-[8%] mt-[9%]   m-auto">
         <h1 className="text-3xl font-bold text-center text-[#e26631] mb-8 mt-[5%]">
           Cálculo IMC
         </h1>
@@ -54,7 +54,7 @@ const CalculadoraIMC = () => {
             <input
               onChange={(e) => setPeso(e.target.value)}
               required
-              className="mt-[6%] w-full h-[5vh] p-[7%] border-2 border-[#e26631] rounded-lg outline-none"
+              className="mt-[6%] w-full h-[6.2vh] p-[7%] border-2 border-[#e26631] rounded-lg outline-none"
               type="text"
               placeholder="Digite aqui seu peso"
             />
@@ -65,7 +65,7 @@ const CalculadoraIMC = () => {
             <input
               onChange={(e) => setAltura(e.target.value)}
               required
-              className="mt-[6%] w-full h-[5vh] p-[7%] border-2 border-[#e26631] rounded-lg outline-none"
+              className="mt-[6%] w-full h-[6.2vh] p-[7%] border-2 border-[#e26631] rounded-lg outline-none"
               type="text"
               placeholder="Digite aqui sua altura"
             />

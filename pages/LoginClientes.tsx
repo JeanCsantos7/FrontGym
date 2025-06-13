@@ -61,7 +61,7 @@ const LoginClientes = () => {
   return (
     <>
       <div className="flex items-center">
-        <div className="w-[45vw]  bg-[#e26631] h-[30vh] max-h-[50vh] rounded-t-[25%] -skew-y-16 mt-[9%] scale-x-165 "></div>
+        <div className="w-[45vw]  bg-[#e26631] h-[40vh] max-h-[45vh] rounded-t-[25%] -skew-y-16 mt-[9%] scale-x-165 "></div>
         <h1 className="z-8 ml-[0.3%]   font-semibold text-5xl text-[#787878] ">
           Login
         </h1>
@@ -80,7 +80,7 @@ const LoginClientes = () => {
             E-mail
           </label>
           <input
-            className=" border-2 border-[#e26631] rounded-lg h-[5vh] mt-[4%] outline-none p-[3%]"
+            className=" border-2 border-[#e26631] rounded-lg w-full h-[6.2vh] mt-[4%] outline-none p-[3%]"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value) }
@@ -92,7 +92,7 @@ const LoginClientes = () => {
             Senha
           </label>
           <input
-            className=" border-2 border-[#e26631] rounded-md  mt-[4%] h-[5vh] p-[3%] outline-none"
+            className=" border-2 border-[#e26631] rounded-md  mt-[4%] w-full h-[6.2vh] p-[3%] outline-none"
             type="password"
             value={senha}
             onChange={(e) => setSenha(e.target.value)}

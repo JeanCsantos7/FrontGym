@@ -51,7 +51,7 @@ const Filtros = ({equipamento, setEquipamento, grupo_muscular, setGrupoMuscular,
 
      
         <select
-          className="w-75 bg-[#e26631] px-4 py-2 rounded-xl text-white outline-none border-2 border-[#ff520d]"
+          className="w-75 h-[5h] bg-[#e26631] px-6 py-4 rounded-xl text-white outline-none border-2 border-[#ff520d]"
           onChange={(e) => setGrupoMuscular(e.target.value)}
           value={grupo_muscular}
         >
@@ -73,7 +73,7 @@ const Filtros = ({equipamento, setEquipamento, grupo_muscular, setGrupoMuscular,
 
     
         <select
-          className="w-75 bg-[#e26631] px-4 py-2 rounded-xl text-white outline-none border-2 border-[#ff520d]"
+          className="w-75 bg-[#e26631] px-6 py-4 rounded-xl text-white outline-none border-2 border-[#ff520d]"
           onChange={(e) => setEquipamento(e.target.value)}
           value={equipamento}
         >

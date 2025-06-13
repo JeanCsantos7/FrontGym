@@ -150,7 +150,7 @@ const DetalhesExercicios = () => {
             </div>
            
           </div>
-          <button onClick={() => navigate(`/exercicios/${pegarParametro}/${item.nome}`)} className="bg-[#e26631] text-[#fff] font-semibold rounded-xl w-full h-[6vh] mt-[6%] p-[3%]">Adicionar na sua ficha</button>
+          <button onClick={() => navigate(`/exercicios/${pegarParametro}/${item.nome}`)} className="bg-[#e26631] cursor-pointer text-[#fff] font-semibold rounded-xl w-full h-[6vh] mt-[6%] p-[3%]">Adicionar na sua ficha</button>
           <div>{confirmarAdicao}</div>
           </div>
           </form>

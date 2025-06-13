@@ -66,10 +66,10 @@ const CheckIn = () => {
     <>
 
       <Header/>
-   <div className="min-h-screen flex flex-col justify-center items-center bg-[#f3f4f6] px-4">
+   <div className=" mt-[8%] flex flex-col justify-center items-center  px-5">
      
      
-      <div className="w-full max-w-md bg-white rounded-2xl shadow-xl p-4 flex flex-col items-center space-y-5">
+      <div className="w-full max-w-md bg-white  rounded-2xl shadow-xl shadow-[#292929] p-4 flex flex-col items-center space-y-5">
       
       
         <img src={Logotipo} className="w-50 h-auto" alt="Logotipo" />

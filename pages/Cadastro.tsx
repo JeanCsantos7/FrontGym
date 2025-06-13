@@ -67,7 +67,7 @@ const Cadastro = () => {
       >
         <input
           required
-          className="bg-white outline-none rounded-lg w-full h-[5vh] p-4 border-2 border-[#e26631]"
+          className="bg-white outline-none rounded-lg w-full h-[6.2vh] p-4 border-2 border-[#e26631]"
           type="text"
           placeholder="Qual seu nome?"
           onChange={(e) => setNome(e.target.value)}
@@ -76,7 +76,7 @@ const Cadastro = () => {
 
     <input
           required
-          className="bg-white outline-none rounded-lg w-full h-[5vh] mt-6 p-4 border-2 border-[#e26631]"
+          className="bg-white outline-none rounded-lg w-full h-[6.2vh] mt-6 p-4 border-2 border-[#e26631]"
           type="number"
           placeholder="Informe seu CPF"
           onChange={(e) => setCPF(e.target.value)}
@@ -86,7 +86,7 @@ const Cadastro = () => {
         
         <input
           required
-          className="bg-white outline-none rounded-lg w-full h-[5vh] mt-6 p-4 border-2 border-[#e26631]"
+          className="bg-white outline-none rounded-lg w-full h-[6.2vh] mt-6 p-4 border-2 border-[#e26631]"
           type="email"
           placeholder="Informe seu melhor E-mail"
           onChange={(e) => setEmail(e.target.value)}
@@ -97,7 +97,7 @@ const Cadastro = () => {
 
         <input
           required
-          className="bg-white outline-none rounded-lg w-full h-[5vh] mt-6 p-4 border-2 border-[#e26631]"
+          className="bg-white outline-none rounded-lg w-full h-[6.2vh] mt-6 p-4 border-2 border-[#e26631]"
           type="password"
           placeholder="Informe sua senha"
           onChange={(e) => setSenha(e.target.value)}
@@ -139,7 +139,7 @@ const Cadastro = () => {
             type="range"
             min="0"
             max="110"
-            className="w-full mx-4 range-custom"
+            className="w-full  mx-4 range-custom"
             onChange={(e) => setPeso(parseFloat(e.target.value))}
           />
           <p className="text-[#787878] font-semibold">{peso} kg</p>

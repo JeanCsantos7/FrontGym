@@ -4,8 +4,8 @@ const config = {
   theme: {
     extend: {
       fontFamily: {
-        bebas: ["Bebas Neue", "sans-serif"], // corrigido aqui
-        inter: ["Inter", "sans-serif"],     // corrigido aqui também
+        bebas: ["Bebas Neue", "sans-serif"], 
+        inter: ["Inter", "sans-serif"],     
       },
     },
   },

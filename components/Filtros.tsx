@@ -32,58 +32,64 @@ const Filtros = ({
   };
 
   return (
-    <div className="flex flex-col items-center justify-center gap-4 mt-10 w-full px-4">
-      <label className="text-lg font-semibold text-gray-700">Filtrar por:</label>
+    <div className="w-full flex flex-col items-center px-4 mt-10">
+      <label className="text-lg font-semibold text-gray-700 mb-6 text-center">
+        Filtrar por:
+      </label>
 
-      <select
-        className="w-full max-w-md min-h-[5rem] bg-[#e26631] px-6 py-3 rounded-xl text-white text-lg outline-none border-2 border-[#ff520d] focus:ring-2 focus:ring-[#e26631]/50"
-        onChange={(e) => setGrupoMuscular(e.target.value)}
-        value={grupo_muscular}
-      >
-        <option disabled value="">
-          Selecione um grupo muscular
-        </option>
-        <option value="Abdomen">Abdomen</option>
-        <option value="Biceps">Biceps</option>
-        <option value="Costas">Costas</option>
-        <option value="Peitoral">Peitoral</option>
-        <option value="Triceps">Triceps</option>
-        <option value="Ombros">Ombros</option>
-        <option value="Quadriceps">Quadriceps</option>
-        <option value="Panturrilha">Panturrilha</option>
-        <option value="Posterior de coxa">Posterior de coxa</option>
-        <option value="Gluteo">Gluteo</option>
-      </select>
-
-      <select
-        className="w-full max-w-md min-h-[5rem] bg-[#e26631] px-6 py-3 rounded-xl text-white text-lg outline-none border-2 border-[#ff520d] focus:ring-2 focus:ring-[#e26631]/50"
-        onChange={(e) => setEquipamento(e.target.value)}
-        value={equipamento}
-      >
-        <option disabled value="">
-          Selecione um Equipamento
-        </option>
-        <option value="Halteres">Halteres</option>
-        <option value="Máquina">Máquina</option>
-        <option value="Polia">Polia</option>
-        <option value="Barra">Barra</option>
-      </select>
-
-      {controlarBotao ? (
-        <button
-          onClick={BotaoBuscar}
-          className="w-full max-w-md mt-4 bg-[#e26631] px-4 py-3 rounded-xl text-white text-lg outline-none border-2 border-[#ff520d] hover:bg-[#cf521d] transition-colors"
+      <div className="flex flex-col lg:flex-row flex-wrap justify-center items-center gap-4 w-full max-w-5xl">
+        <select
+          className="w-full lg:w-[300px] bg-[#e26631] px-4 py-3 rounded-xl text-white text-base outline-none border-2 border-[#ff520d] focus:ring-2 focus:ring-[#e26631]/50"
+          onChange={(e) => setGrupoMuscular(e.target.value)}
+          value={grupo_muscular}
         >
-          Buscar
-        </button>
-      ) : (
-        <button
-          onClick={LimparFiltros}
-          className="w-full max-w-md mt-4 bg-[#e26631] px-4 py-3 rounded-xl text-white text-lg outline-none border-2 border-[#ff520d] hover:bg-[#cf521d] transition-colors"
+          <option disabled value="">
+            Selecione um grupo muscular
+          </option>
+          <option value="Abdomen">Abdomen</option>
+          <option value="Biceps">Biceps</option>
+          <option value="Costas">Costas</option>
+          <option value="Peitoral">Peitoral</option>
+          <option value="Triceps">Triceps</option>
+          <option value="Ombros">Ombros</option>
+          <option value="Quadriceps">Quadriceps</option>
+          <option value="Panturrilha">Panturrilha</option>
+          <option value="Posterior de coxa">Posterior de coxa</option>
+          <option value="Gluteo">Gluteo</option>
+        </select>
+
+        <select
+          className="w-full lg:w-[300px] bg-[#e26631] px-4 py-3 rounded-xl text-white text-base outline-none border-2 border-[#ff520d] focus:ring-2 focus:ring-[#e26631]/50"
+          onChange={(e) => setEquipamento(e.target.value)}
+          value={equipamento}
         >
-          Limpar Filtros
-        </button>
-      )}
+          <option disabled value="">
+            Selecione um Equipamento
+          </option>
+          <option value="Halteres">Halteres</option>
+          <option value="Máquina">Máquina</option>
+          <option value="Polia">Polia</option>
+          <option value="Barra">Barra</option>
+        </select>
+
+        <div className="w-full lg:w-[300px]">
+          {controlarBotao ? (
+            <button
+              onClick={BotaoBuscar}
+              className="w-full bg-[#e26631] px-4 py-3 rounded-xl text-white text-lg font-semibold outline-none border-2 border-[#ff520d] hover:bg-[#cf521d] transition-colors"
+            >
+              Buscar
+            </button>
+          ) : (
+            <button
+              onClick={LimparFiltros}
+              className="w-full bg-[#e26631] px-4 py-3 rounded-xl text-white text-lg font-semibold outline-none border-2 border-[#ff520d] hover:bg-[#cf521d] transition-colors"
+            >
+              Limpar Filtros
+            </button>
+          )}
+        </div>
+      </div>
     </div>
   );
 };

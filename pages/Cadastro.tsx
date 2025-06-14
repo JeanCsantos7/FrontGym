@@ -56,7 +56,7 @@ const Cadastro = () => {
 
   return (
     <div className="flex flex-col justify-center items-center px-4 mt-10">
-      <img className="w-[55%]" src={Logotipo} alt="Logo" />
+      <img className="md:w-[55%] lg:w-[12%]" src={Logotipo} alt="Logo" />
       <h1 className="text-center text-[#e26631] font-semibold text-2xl mt-6">
         Cadastre-se
       </h1>

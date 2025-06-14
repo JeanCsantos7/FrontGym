@@ -32,7 +32,7 @@ const ConfirmacaoDelete = ({id, isOpen, isClosed, fetchApi} : ModalTypes) => {
 
     >
 
-   <button  className="text-[#fff] text-lg ml-[90%] bg-[#ff672b] rounded-3xl">
+   <button onClick={isClosed}  className="text-[#fff] text-lg ml-[90%] bg-[#ff672b] rounded-3xl">
             X
     </button> 
 

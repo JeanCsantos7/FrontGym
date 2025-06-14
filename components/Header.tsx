@@ -3,43 +3,56 @@ import { IoMenuSharp, IoLogOutSharp } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import Logotipo from "../src/assets/Logotipo.png";
 import MenuMobile from "../components/MenuMobile";
+import MenuDesktop from "./MenuDesktop";
+import ConfirmacaoLogout from "../components/ConfirmacaoLogout"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const[isOpen, setIsOpen] = useState(false)
   const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
   };
 
-  const Logout = () => {
-    setTimeout(() => {
-      sessionStorage.removeItem("token");
-      sessionStorage.removeItem("nome");
-      sessionStorage.removeItem("id");
-      navigate("/");
-    }, 3500);
+  const isClosed = () => {
+    
+     setIsOpen(false)
+
+ 
   };
+
+
+  const abrirModal = () => {
+    setIsOpen(true)
+  }
 
   return (
     <>
-      <nav className="flex items-center justify-between px-6 py-4 ">
+      <nav className="flex  items-center justify-between px-6 py-4 ">
         <img src={Logotipo} alt="Logotipo" className="w-40" />
 
         <div className="flex items-center gap-6">
           <IoMenuSharp
             onClick={toggleMenu}
-            className="text-4xl text-[#e26631] font-extrabold cursor-pointer"
+            className="lg:hidden  text-4xl text-[#e26631] font-extrabold cursor-pointer"
           />
+            
+          <div className="md: hidden lg:block">
+          <MenuDesktop />
+          </div>
+        
           <IoLogOutSharp
-            onClick={Logout}
+           onClick={abrirModal}
             className="text-4xl text-[#e26631] font-extrabold cursor-pointer"
           />
+
+          <ConfirmacaoLogout isOpen={isOpen} isClosed={isClosed}/>
         </div>
       </nav>
 
       {isMenuOpen && (
-        <div className="mt-2">
+        <div className="  mt-2">
           <MenuMobile />
         </div>
       )}

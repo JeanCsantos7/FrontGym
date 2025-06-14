@@ -56,11 +56,11 @@ const DetalhesExercicios = () => {
       );
 
       setConfirmar(<ConfirmacaoAlert />);
-      alert("teste")
+      
       setTimeout(() => {
         setConfirmar("");
     
-      }, 5200);
+      }, 5400);
 
           fetchAPI();
 

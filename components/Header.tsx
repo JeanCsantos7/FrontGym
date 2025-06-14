@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { IoMenuSharp, IoLogOutSharp } from "react-icons/io5";
-import { useNavigate } from "react-router-dom";
 import Logotipo from "../src/assets/Logotipo.png";
 import MenuMobile from "../components/MenuMobile";
 import MenuDesktop from "./MenuDesktop";
@@ -9,7 +8,7 @@ import ConfirmacaoLogout from "../components/ConfirmacaoLogout"
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const[isOpen, setIsOpen] = useState(false)
-  const navigate = useNavigate();
+
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
